@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';" /> -->
+    <title>Practice</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="input-form">
+      <input type="text" placeholder="City.." id="city" />
+      <button id="ok">GO</button>
+    </div>
+    <div class="container weather-container">
+      <div class="row">
+        <div class="col">
+          <div class="weather-card one">
+            <div class="top">
+              <div class="wrapper">
+                <div class="mynav">
+                  <a href="#"><i class="fas fa-chevron-left"></i></a>
+                  <a href="#"><i class="fas fa-cog"></i></a>
+                </div>
+                <h1 class="heading">Loading..</h1>
+                <h3 class="location">Loading..</h3>
+                <p class="temp">
+                  <span class="temp-value">Loading..</span>
+                  <span class="deg">0</span>
+                  <a href="#"><span class="temp-type"></span></a>
+                </p>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="wrapper">
+                <div class="forecast">
+                  <li class="active">
+                    <span class="date">Max Temp:</span>
+                    <span class="condition">
+                      <span class="max-temp">Loading..</span>
+                      <span class="deg">0</span>
+                      <span class="temp-value">C</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="date"> Min Temp: </span>
+                    <span class="condition">
+                      <span class="min-temp">Loading...</span>
+                      <span class="deg">0</span>
+                      <span class="temp-value">C</span>
+                    </span>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script defer src="./render.js"></script>
+</html>

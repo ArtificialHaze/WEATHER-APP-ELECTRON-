@@ -1,0 +1,159 @@
+body {
+  font-family: monospace, sans-serif;
+  background-color: #112233;
+}
+
+#city,
+#ok {
+  position: absolute;
+  border-radius: 10px;
+  left: 6px;
+  border: none;
+  outline: none;
+  top: 20px;
+}
+
+#ok {
+  left: 182px;
+  cursor: pointer;
+  top: 20px;
+  font-weight: bold;
+  background: transparent;
+  transition: all 330ms ease-in-out;
+}
+
+#ok:hover {
+  background-color: #222345;
+  color: #fff;
+}
+
+.weather-card {
+  margin: 60px auto;
+  height: 500px;
+  width: 450px;
+  background: #fff;
+  box-shadow: 0 1px 38px rgba(red, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.weather-card .top {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  /* TEMPORARY STYLING WITHOUT IMAGE */
+  background-color: skyblue;
+  /* IMAGE GOES HERE, BELOW */
+  /* background-image: []; */
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.weather-card .top .wrapper {
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.weather-card .top .wrapper .heading {
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.weather-card .top .wrapper .location {
+  margin-top: 20px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.weather-card .top .wrapper .temp {
+  margin-top: 20px;
+}
+
+.weather-card .top .wrapper .temp a .temp-type {
+  font-size: 85px;
+}
+
+.weather-card .top .wrapper .temp .temp-value {
+  display: inline-block;
+  font-size: 85px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.weather-card .top .wrapper .temp .deg {
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 600;
+  color: #222345;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.weather-card .top::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.weather-card .bottom {
+  padding: 0px 30px;
+  background: salmon;
+  height: 100%;
+}
+
+.weather-card .bottom .wrapper .forecast {
+  overflow: hidden;
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+  padding-top: 20px;
+  min-height: 155px;
+}
+
+.weather-card .bottom .wrapper .forecast a {
+  text-decoration: none;
+  color: #000;
+}
+
+.weather-card .top .wrapper .mynav {
+  height: 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-card .bottom .wrapper .forecast .go-up {
+  text-align: center;
+  display: block;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.weather-card .bottom .wrapper .forecast li {
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.25);
+  line-height: 1em;
+  margin-bottom: 30px;
+}
+
+.weather-card .bottom .wrapper .forecast li .date {
+  display: inline-block;
+}
+
+.weather-card .bottom .wrapper .forecast li .condition {
+  display: inline-block;
+  vertical-align: middle;
+  /* float: right; */
+}
